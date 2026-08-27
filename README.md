@@ -8,7 +8,7 @@ Judy 编写和维护的个人小工具与实验性 Agent Skills。
 
 | Skill | 说明 | 状态 |
 | --- | --- | --- |
-| [gift-recommender](skills/gift-recommender/) | 根据关系、场合、预算和禁忌提供分层礼物推荐、避雷提示与贺卡文案 | 实验性 |
+| [gift-recommender](skills/gift-recommender/) | 根据关系、场合、预算和生活方式推荐有品质、有发现感及能提升日常幸福感的礼物 | 实验性 |
 
 ## 目录结构
 
