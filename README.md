@@ -28,4 +28,4 @@ judy-skills/
 
 ## License
 
-暂未添加开源许可证。除非作者另行授权，否则保留全部权利。
+本仓库采用 [MIT License](LICENSE)。

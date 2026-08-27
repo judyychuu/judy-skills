@@ -55,4 +55,4 @@ cp -R skills/gift-recommender ~/.codex/skills/gift-recommender
 
 ## License
 
-暂未添加开源许可证。除非作者另行授权，否则保留全部权利。
+本 Skill 采用仓库根目录中的 [MIT License](../../LICENSE)。

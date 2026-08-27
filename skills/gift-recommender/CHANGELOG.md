@@ -8,6 +8,7 @@
 
 - 增加 `CHANGELOG.md`，集中记录版本变化。
 - 在 `v1.0.0` Release 中补充适用于 Claude 上传的 `gift-recommender.zip` 安装包。
+- 仓库采用 MIT License，版权归 `judyychuu` 所有。
 
 ### 调整
 
