@@ -6,6 +6,8 @@
 
 ### 新增
 
+- 新增“日常幸福感升级”推荐方向：识别对方不会主动购买，但能让高频生活动作更方便、更顺手或更有质感的小物。
+- 增加 PopSockets 磁吸手机支架、MOFT 磁吸卡包等示例，并要求核对 MagSafe、手机壳和卡片使用习惯等兼容条件。
 - 增加 `CHANGELOG.md`，集中记录版本变化。
 - 在 `v1.0.0` Release 中补充适用于 Claude 上传的 `gift-recommender.zip` 安装包。
 - 仓库采用 MIT License，版权归 `judyychuu` 所有。
