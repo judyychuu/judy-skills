@@ -1,0 +1,6 @@
+interface:
+  display_name: "Image to Editable PPT"
+  short_description: "忠实还原原图文字与图标比例，生成整体箭头和可改色矢量图标的可编辑PPTX"
+  default_prompt: "使用 $image-to-pptx 将提供的图片转成可编辑 PPTX，保持文字与 icon 比例，使用整体箭头并优先重建可改色矢量 icon。"
+policy:
+  allow_implicit_invocation: true
