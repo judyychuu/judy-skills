@@ -57,6 +57,21 @@ def inspect(path):
                     body = shape.find('./'+P+'txBody/'+A+'bodyPr')
                     if body is None or body.find(A+'spAutoFit') is None:
                         issue('textbox_requires_shape_autofit')
+                else:
+                    text_body = shape.find(P+'txBody')
+                    body = text_body.find(A+'bodyPr') if text_body is not None else None
+                    # Ordinary shapes may have text frames without being text boxes.
+                    # Even an empty auto-sized frame can change geometry on paste.
+                    has_content = text_body is not None and (
+                        any((node.text or '').strip() for node in text_body.iter(A+'t'))
+                        or next(text_body.iter(A+'fld'), None) is not None
+                    )
+                    if not has_content and body is not None and body.find(A+'spAutoFit') is not None:
+                        identity = shape.find('./'+P+'nvSpPr/'+P+'cNvPr')
+                        issue('empty_graphic_shape_autofit',
+                              shape_id=identity.get('id') if identity is not None else None,
+                              shape_name=identity.get('name') if identity is not None else None,
+                              action='Remove the empty text body or use noAutofit; preserve geometry and populated shape text')
             for group in root.iter(P+'grpSp'):
                 xfrm = group.find('./'+P+'grpSpPr/'+A+'xfrm')
                 if xfrm is not None:
